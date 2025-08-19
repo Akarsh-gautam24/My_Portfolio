@@ -312,3 +312,108 @@ footer{
   color: #00acee; /* hover color */
   transform: scale(1.1);
 }
+
+
+/* ---------- Mobile Responsive Fixes ---------- */
+@media (max-width: 768px) {
+  /* Navbar compact */
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Hero section adjust */
+  .hero {
+    padding-top: 80px;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .hero p.subtitle {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  /* About section single column */
+  #about .about-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Timeline full width */
+  .timeline {
+    padding-left: 10px;
+  }
+
+  /* Project cards full width */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Certificate cards */
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact links wrap */
+  #contact .links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Profile picture ring adjust */
+  .ring-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+  .profile-pic {
+    width: 104px;
+    height: 104px;
+  }
+}
+
+/* Hamburger icon hidden on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile view styling */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 220px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 12px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 60px; /* theme toggle ke paas */
+    top: 15px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+}
