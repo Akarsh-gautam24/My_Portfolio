@@ -72,12 +72,10 @@ if(form){
 }
 
 
-/* ------------ Mobile Nav Toggle ------------ */
-const navToggle = document.createElement("button");
-navToggle.id = "nav-toggle";
-navToggle.textContent = "☰";
-document.querySelector("header").insertBefore(navToggle, document.querySelector("nav"));
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
 
-navToggle.addEventListener("click", () => {
-  document.querySelector("nav ul").classList.toggle("show-menu");
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
 });
+
