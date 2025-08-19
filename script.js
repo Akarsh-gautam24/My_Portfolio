@@ -70,3 +70,14 @@ if(form){
     window.location.href = mailto;
   });
 }
+
+
+/* ------------ Mobile Nav Toggle ------------ */
+const navToggle = document.createElement("button");
+navToggle.id = "nav-toggle";
+navToggle.textContent = "☰";
+document.querySelector("header").insertBefore(navToggle, document.querySelector("nav"));
+
+navToggle.addEventListener("click", () => {
+  document.querySelector("nav ul").classList.toggle("show-menu");
+});
