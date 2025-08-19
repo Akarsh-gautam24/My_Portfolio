@@ -12,24 +12,30 @@
 
   <!-- Navbar -->
   <header>
-    <div class="logo">  <span class="logo-text"><strong>Akarsh Gautam</strong></span>
-  <div class="static-ring"></div>
- </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#internships">Internships</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    
-    <button id="theme-toggle">🌙</button>
-  </header>
+  <div class="logo">
+    <span class="logo-text"><strong>Akarsh Gautam</strong></span>
+    <div class="static-ring"></div>
+  </div>
+
+  <nav>
+    <!-- Hamburger Button -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button id="theme-toggle">🌙</button>
+</header>
+
 
   <!-- Home -->
 <section id="home" class="hero">
@@ -85,16 +91,16 @@
       <strong>JD Infotech</strong> — Cybersecurity analyst Intern
       <div class="when">July – August</div>
       <ul>
-        <li>Network traffic analysis, phishing detection</li>
-        <li>Vulnerability scanning suggestions</li>
+        <li>Performed network traffic analysis to identify anomalies and detect phishing attempts</li>
+        <li>Gained hands-on experience in analyzing attack patterns and basic defensive measures</li>
       </ul>
     </div>
     <div class="entry">
       <strong>Future Interns</strong> — Cybersecurity Intern
       <div class="when">July – August</div>
       <ul>
-        <li>Siem Splunk Hands-on practise & Log Analysis</li>
-        <li>Incident documentation & response support</li>
+        <li>Conducted SIEM (Splunk) hands-on practice for log ingestion and security event analysis</li>
+        <li>Learned fundamentals of SOC workflows including alert triage and escalation</li>
       </ul>
     </div>
    
@@ -102,8 +108,8 @@
       <strong>Elevated Labs</strong> — Cybersecurity Intern
       <div class="when">May – June</div>
       <ul>
-        <li>Password Analyzer & Wordlist Generator Project</li>
-        <li>Log analysis, alert triage, basic incident reporting</li>
+        <li>Developed a Password Analyzer & Wordlist Generator project to support security testing</li>
+        <li>Built practical understanding of security tools and their role in incident response</li>
       </ul>
     </div>
   </div>
@@ -183,8 +189,8 @@
   <!-- Resume -->
 <section id="resume">
   <h2>Resume</h2>
-  <p class="panel">Resume will be uploaded soon. Keep this button ready 👇</p>
-  <a href="#" class="btn" aria-disabled="true">Download Resume</a>
+  <p class="panel">Grab a copy of my Resume 👇</p>
+  <a href="https://drive.google.com/file/d/1A38tfR3N60LDsD4M7n1Nkm9iczEspCwK/view?usp=drivesdk" class="btn" aria-disabled="true">Download Resume</a>
 </section>
 
   <!-- Certificates -->
@@ -206,35 +212,35 @@
       </div>
       
     </a>
-    <a class="cert-card" href="#" target="_blank">
+    <a class="cert-card" href="https://coursera.org/share/51961bfaee7d98d3069e84564fa4c335" target="_blank">
       <div class="cert-logo"></div>
       <div>
         <strong>SIEM Splunk Hands-On Guide</strong>
         <div class="muted">Coursera</div>
       </div>
     </a>
-     <a class="cert-card" href="#" target="_blank">
+     <a class="cert-card" href="https://coursera.org/share/d588d5365d5f369de1163ac66563f9f7" target="_blank">
       <div class="cert-logo"></div>
       <div>
         <strong>CISCO Network Security </strong>
         <div class="muted">Coursera</div>
       </div>
     </a>
-    <a class="cert-card" href="#" target="_blank">
+    <a class="cert-card" href="https://coursera.org/share/54db93929d2b3a24ed08175532d1165d" target="_blank">
       <div class="cert-logo"></div>
       <div>
         <strong>IBM Security Analyst Fundamental certificate</strong>
         <div class="muted">Coursera</div>
       </div>
     </a>
-    <a class="cert-card" href="#" target="_blank">
+    <a class="cert-card" href="https://coursera.org/share/825da4aa081cf07aa1aa3bee0833df5c" target="_blank">
       <div class="cert-logo"></div>
       <div>
         <strong>Ethical Hacking Essentials (E|HE)</strong>
         <div class="muted">EC-Council (Coursera)</div>
       </div>
     </a>
-    <a class="cert-card" href="#" target="_blank">
+    <a class="cert-card" href="https://coursera.org/share/cb9e89715151ba897bb8b57c016a0863" target="_blank">
       <div class="cert-logo"></div>
       <div>
         <strong>Wireshark</strong>
@@ -266,7 +272,7 @@
 
      <!-- Project 2 -->
     <article class="card">
-      <img class="preview" src="images/Port-Scanner.jpeg" alt="Port Scanner">
+      <img class="preview" src="images/port-scanner.jpeg" alt="Port Scanner">
       <div class="content">
         <h3>Port Scanner with Threat Intelligence</h3>
         <p>Multi-IP scanning, GeoIP lookup, and risk rating system.</p>
@@ -278,7 +284,7 @@
     </article>
 
     <article class="card">
-      <img class="preview" src="images/Log-Analyzer.webp" alt="Log Analyzer">
+      <img class="preview" src="images/log-analyzer.webp" alt="Log Analyzer">
       <div class="content">
         <h3>Log File Analyzer</h3>
         <p>Parses logs, flags anomalies, builds incident summary.</p>
@@ -335,4 +341,3 @@
   </footer>
 </body>
 </html>
-
