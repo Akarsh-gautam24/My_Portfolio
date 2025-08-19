@@ -377,43 +377,44 @@ footer{
   }
 }
 
-/* Hamburger icon hidden on desktop */
+
+/* Default nav links (desktop view) */
+#nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Hide hamburger on desktop */
 .menu-toggle {
   display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: white;
 }
 
-/* Mobile view styling */
+/* Mobile responsive style */
 @media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background: #222;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    width: 220px;
-    border-radius: 10px;
-    padding: 10px;
-  }
-
-  nav ul li {
-    text-align: center;
-    margin: 12px 0;
-  }
-
   .menu-toggle {
     display: block;
-    position: absolute;
-    right: 60px; /* theme toggle ke paas */
-    top: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 10px;
   }
 
-  nav ul.active {
-    display: flex;
+  #nav-links {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  #nav-links.active {
+    display: flex; /* show when active */
   }
 }
+
+
