@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akarsh Gautam | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="dark">
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">  <span class="logo-text"><strong>Akarsh Gautam</strong></span>
+  <div class="static-ring"></div>
+ </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <!-- Home -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="ring-wrapper">
+      <div class="rotating-ring"></div>
+      <img src="images/profile.jpg" alt="Akarsh Gautam" class="profile-pic">
+    </div>
+
+    <h1>Hi, I'm <span class="gradient-text">Akarsh Gautam</span></h1>
+    <p class="subtitle">SOC Analyst • Cybersecurity Enthusiast • Final Year BCA Student</p>
+    <h3><span id="typing"></span></h3>
+
+    <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#resume" class="btn-outline">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About -->
+  <section id="about">
+  <h2>About Me</h2>
+  <div class="about-grid">
+    <div class="panel">
+      <p>I’m a aspiring SOC Analyst, Cybersecurity Enthusiast, and Final Year BCA student passionate about detection, response, and building defenses. I enjoy SIEM queries, log analysis, incident triage, and threat hunting.</p>
+      <ul>
+        <li>🎓 <strong>Bachelors of Computer Application</strong> (2023-26)</li>
+        <ul>Manipal University Jaipur</ul>
+        <ul>CGPA - <strong>8/10</strong></ul>
+        <li>📘<strong> Higher Secondary Education </strong> (2021-2023)</li>
+        <ul>Grades - 83%</ul>
+        <li>📘<strong> Secondary Education  </strong>(2020-2021)</li>
+        <ul>Grades - 82.4%</ul>
+          
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Quick Links</h3>
+      <p>✉️ <a href="mailto:akarshgautam6@gmail.com">akarshgautam6@gmail.com</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/akarsh-gautam-ba62292a3" target="_blank">LinkedIn</a></p>
+      <p>🔗 <a href="https://github.com/Akarsh-gautam24" target="_blank">GitHub</a></p>
+    </div>
+  </div>
+</section>
+
+  <!-- Internships -->
+  <section id="internships">
+  <h2>Internships</h2>
+  <div class="timeline">
+    <div class="entry">
+      <strong>JD Infotech</strong> — Cybersecurity analyst Intern
+      <div class="when">July – August</div>
+      <ul>
+        <li>Network traffic analysis, phishing detection</li>
+        <li>Vulnerability scanning suggestions</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <strong>Future Interns</strong> — Cybersecurity Intern
+      <div class="when">July – August</div>
+      <ul>
+        <li>Siem Splunk Hands-on practise & Log Analysis</li>
+        <li>Incident documentation & response support</li>
+      </ul>
+    </div>
+   
+     <div class="entry">
+      <strong>Elevated Labs</strong> — Cybersecurity Intern
+      <div class="when">May – June</div>
+      <ul>
+        <li>Password Analyzer & Wordlist Generator Project</li>
+        <li>Log analysis, alert triage, basic incident reporting</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skill-category">
+    <h3>🛡️ SOC Operations</h3>
+    <div class="skill-icons">
+      <span class="skill-badge">Incident Response</span>
+      <span class="skill-badge">Threat Detection</span>
+      <span class="skill-badge">Log Analysis</span>
+      <span class="skill-badge">Alert Triage</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>🛠️ Security Tools</h3>
+    <div class="skill-icons">
+      <span class="skill-badge">Splunk</span>
+      <span class="skill-badge">Wireshark</span>
+      <span class="skill-badge"> Nmap</span>
+      <span class="skill-badge">Burp suite</span>
+      <span class="skill-badge">Metasploitable</span>
+      <span class="skill-badge">MS Defender</span>
+      <span class="skill-badge">tcpdump</span>
+      <span class="skill-badge">Kali Linux</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>🌐 Networking & Protocol</h3>
+    <div class="skill-icons">
+      <span class="skill-badge">TCP/IP</span>
+      <span class="skill-badge">HTTP/HTTPS</span>
+      <span class="skill-badge"> VPN/Proxy Logs</span>
+      <span class="skill-badge"> Firewall</span>
+      <span class="skill-badge"> IDS/IPS</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>💻 OS & Scripting</h3>
+    <div class="skill-icons">
+      <span class="skill-badge"> Python</span>
+      <span class="skill-badge"> Linux</span>
+      <span class="skill-badge"> HTML</span>
+      <span class="skill-badge"> CSS</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>📊 Frameworks & Models</h3>
+    <div class="skill-icons">
+      <span class="skill-badge">MITRE ATT&CK</span>
+      <span class="skill-badge">NIST CSF</span>
+      <span class="skill-badge">CIA Triad</span>
+      <span class="skill-badge"> OWASP Top 10</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>🤝 Soft Skills</h3>
+    <div class="skill-icons">
+      <span class="skill-badge">Analytical Thinking</span>
+      <span class="skill-badge">Documentation & Reporting</span>
+      <span class="skill-badge">Team Collaboration</span>
+      <span class="skill-badge">Attention to Details</span>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Resume -->
+<section id="resume">
+  <h2>Resume</h2>
+  <p class="panel">Resume will be uploaded soon. Keep this button ready 👇</p>
+  <a href="#" class="btn" aria-disabled="true">Download Resume</a>
+</section>
+
+  <!-- Certificates -->
+ <section id="certificates">
+  <h2>Certificates</h2>
+  <div class="cert-grid">
+    <a class="cert-card" href="#" target="_blank">
+      <div class="cert-logo"></div>
+      <div>
+        <strong>IBM Cybersecurity Analyst Professional Certificate</strong>
+        <div class="muted">Coursera</div>
+      </div>
+    </a>
+    <a class="cert-card" href="https://coursera.org/share/036712c8b4dd9739412d411bd6ccb9eb" target="_blank">
+      <div class="cert-logo"></div>
+      <div>
+        <strong>Google Cybersecurity Professional certificate</strong>
+         <div class="muted">Coursera</div>
+      </div>
+      
+    </a>
+    <a class="cert-card" href="#" target="_blank">
+      <div class="cert-logo"></div>
+      <div>
+        <strong>SIEM Splunk Hands-On Guide</strong>
+        <div class="muted">Coursera</div>
+      </div>
+    </a>
+     <a class="cert-card" href="#" target="_blank">
+      <div class="cert-logo"></div>
+      <div>
+        <strong>CISCO Network Security </strong>
+        <div class="muted">Coursera</div>
+      </div>
+    </a>
+    <a class="cert-card" href="#" target="_blank">
+      <div class="cert-logo"></div>
+      <div>
+        <strong>IBM Security Analyst Fundamental certificate</strong>
+        <div class="muted">Coursera</div>
+      </div>
+    </a>
+    <a class="cert-card" href="#" target="_blank">
+      <div class="cert-logo"></div>
+      <div>
+        <strong>Ethical Hacking Essentials (E|HE)</strong>
+        <div class="muted">EC-Council (Coursera)</div>
+      </div>
+    </a>
+    <a class="cert-card" href="#" target="_blank">
+      <div class="cert-logo"></div>
+      <div>
+        <strong>Wireshark</strong>
+        <div class="muted">Coursera</div>
+      </div>
+    </a>
+    
+  </div>
+</section>
+
+
+  <!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    
+    <!-- Project 1 -->
+    <article class="card">
+      <img class="preview" src="images/password-analyzer.webp" alt="Password Analyzer">
+      <div class="content">
+        <h3>Password Analyzer & Wordlist Generator</h3>
+        <p>Strength checker + smart wordlist generator for audits.</p>
+      </div>
+      <div class="actions">
+        <a class="btn-outline" href="https://github.com/Akarsh-gautam24/Password-Analyzer-Wordlist-Generator" target="_blank">GitHub</a>
+        <a class="btn" href="#" target="_blank">Live Demo</a>
+      </div>
+    </article>
+
+     <!-- Project 2 -->
+    <article class="card">
+      <img class="preview" src="images/port-scanner.jpeg" alt="Port Scanner">
+      <div class="content">
+        <h3>Port Scanner with Threat Intelligence</h3>
+        <p>Multi-IP scanning, GeoIP lookup, and risk rating system.</p>
+      </div>
+      <div class="actions">
+        <a class="btn-outline" href="https://github.com/Akarsh-gautam24/port-scanner-threat-intel" target="_blank">GitHub</a>
+        <a class="btn" href="#" target="_blank">Live Demo</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="preview" src="images/log-analyzer.webp" alt="Log Analyzer">
+      <div class="content">
+        <h3>Log File Analyzer</h3>
+        <p>Parses logs, flags anomalies, builds incident summary.</p>
+      </div>
+      <div class="actions">
+        <a class="btn-outline" href="https://github.com/Akarsh-gautam24/Log-File-Analyzer" target="_blank">GitHub</a>
+        <a class="btn" href="https://log-analyzer-web-ubslepkydzqxwa8vfjhanu.streamlit.app/" target="_blank">Live Demo</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="preview" src="images/phishing-detection.jpg" alt="Phishing Detector">
+      <div class="content">
+        <h3>Phishing Link Detector</h3>
+        <p>Feature-based detection + real-time threat APIs.</p>
+      </div>
+      <div class="actions">
+        <a class="btn-outline" href="https://github.com/Akarsh-gautam24/phishing-link-detector" target="_blank">GitHub</a>
+        <a class="btn" href="#" target="_blank">Live Demo</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="links">
+    <a class="contact-link" href="mailto:akarshgautam6@gmail.com" target="_blank">
+      <i class="fa-solid fa-envelope"></i> Email
+    </a>
+    <a class="contact-link" href="https://www.linkedin.com/in/akarsh-gautam-ba62292a3" target="_blank">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+    <a class="contact-link" href="https://github.com/Akarsh-gautam24" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+  </div>
+
+
+  <form>
+    <input name="name" placeholder="Your name" required>
+    <input name="email" type="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message"></textarea>
+    <button class="btn" type="submit">Send</button>
+  </form>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Akarsh Gautam | Portfolio Secure ✅</p>
+  </footer>
+</body>
+</html>
