@@ -37,10 +37,10 @@ img{max-width:100%;display:block}
 section{max-width:1100px;margin:0 auto;padding:80px 20px}
 h1,h2,h3{margin:0 0 14px}
 
-/* ---------- Sticky Navbar ---------- */
-/* Sticky Header */
+
+/* ---------- Navbar ---------- */
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -48,11 +48,81 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 12px 40px;
-  background: rgba(103,104,119,0.74); /* Transparent bg */
+  background: rgba(103, 104, 119, 0.74);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   z-index: 1000;
 }
+
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* ---------- Desktop Nav ---------- */
+#nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+#nav-links li a {
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: var(--muted);
+  transition: all 0.2s ease;
+}
+#nav-links li a:hover {
+  color: var(--text);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Hamburger Button ---------- */
+.menu-toggle {
+  display: none; /* desktop pe hidden */
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------- Mobile Responsive ---------- */
+@media (max-width: 768px) {
+  /* show hamburger */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* nav-links ko hide by default */
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px;
+    gap: 12px;
+  }
+
+  /* toggle hone pe show */
+  #nav-links.active {
+    display: flex;
+  }
+}
+
 
 /* Hero section ko thoda padding dene ki zarurat nahi hogi sticky me */
 .hero {
@@ -378,43 +448,28 @@ footer{
 }
 
 
-/* Default nav links (desktop view) */
-#nav-links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
 
-/* Hide hamburger on desktop */
-.menu-toggle {
-  display: none;
-}
-
-/* Mobile responsive style */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    margin: 10px;
+  /* Hide logo text but keep navbar compact */
+  .logo-text { display: none; }
+
+  header {
+    flex-direction: row;       /* column nahi, row hi rahe */
+    justify-content: flex-end; /* buttons right me align */
+    padding: 8px 16px;
   }
 
-  #nav-links {
-    display: none; /* hidden by default */
-    flex-direction: column;
-    background: #111;
+  #nav-links { 
+    display: none;             /* default hidden */
     position: absolute;
     top: 50px;
-    right: 10px;
+    right: 16px;
+    flex-direction: column;
+    background: var(--panel);
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 12px;
+    gap: 10px;
   }
 
-  #nav-links.active {
-    display: flex; /* show when active */
-  }
+  #nav-links.active { display: flex; }
 }
-
-
