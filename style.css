@@ -167,11 +167,11 @@ header {
   gap: 0px;
 }
 
-/* Logo text */
+/* Logo text for akarsh gautam*/
 .logo-text {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #fffdfe;
+  color: #f7a32c;
 }
 
 
@@ -292,6 +292,35 @@ header {
 .card:hover{ transform: translateY(-3px); border-color: var(--brand-2); box-shadow: var(--shadow) }
 .card .content{ padding:16px }
 .card .actions{ display:flex; gap:10px; padding:0 16px 16px }
+
+
+.tech-used span {
+  display: inline-block;
+  background: #374151;
+  color: #fff;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+.features {
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #e2e8f0;
+}
+.features li {
+  margin-bottom: 5px;
+}
+.btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  background: #3b82f6;
+  color: #fff;
+  margin-right: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
 
 /* Optional screenshot image */
 .card img.preview{
@@ -429,6 +458,7 @@ footer{
   .cert-grid {
     grid-template-columns: 1fr;
   }
+  .cert-logo { width: 40px/56px/64px }
 
   /* Contact links wrap */
   #contact .links {
@@ -473,3 +503,5 @@ footer{
 
   #nav-links.active { display: flex; }
 }
+
+
