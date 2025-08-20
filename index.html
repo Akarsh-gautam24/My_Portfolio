@@ -13,8 +13,7 @@
   <!-- Navbar -->
   <header>
   <div class="logo">
-    <span class="logo-text"><strong>Akarsh Gautam</strong></span>
-    <div class="static-ring"></div>
+    <span class="logo-text"><strong>Akarsh </strong></span><strong></strong>
   </div>
 
   <nav>
@@ -46,7 +45,7 @@
     </div>
 
     <h1>Hi, I'm <span class="gradient-text">Akarsh Gautam</span></h1>
-    <p class="subtitle">SOC Analyst • Cybersecurity Enthusiast • Final Year BCA Student</p>
+    <p class="subtitle">Aspiring SOC Analyst focused on SIEM, detection, and response.</p>
     <h3><span id="typing"></span></h3>
 
     <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
@@ -62,12 +61,13 @@
   <h2>About Me</h2>
   <div class="about-grid">
     <div class="panel">
-      <p>I’m a aspiring SOC Analyst, Cybersecurity Enthusiast, and Final Year BCA student passionate about detection, response, and building defenses. I enjoy SIEM queries, log analysis, incident triage, and threat hunting.</p>
+      <p>Aspiring SOC Analyst, Cybersecurity Enthusiast, and Final Year BCA student passionate about detection, response, and building defenses. Comfortable writing SIEM queries(Splunk), triaging alerts, log analysis, and threat hunting.</p>
       <ul>
         <li>🎓 <strong>Bachelors of Computer Application</strong> (2023-26)</li>
         <ul>Manipal University Jaipur</ul>
-        <ul>CGPA - <strong>8/10</strong></ul>
+        <ul>CGPA - 8/10</ul>
         <li>📘<strong> Higher Secondary Education </strong> (2021-2023)</li>
+        <ul>Stream - PCM</ul>
         <ul>Grades - 83%</ul>
         <li>📘<strong> Secondary Education  </strong>(2020-2021)</li>
         <ul>Grades - 82.4%</ul>
@@ -89,7 +89,7 @@
   <div class="timeline">
     <div class="entry">
       <strong>JD Infotech</strong> — Cybersecurity analyst Intern
-      <div class="when">July – August</div>
+      <div class="when">July – August 2025</div>
       <ul>
         <li>Performed network traffic analysis to identify anomalies and detect phishing attempts</li>
         <li>Gained hands-on experience in analyzing attack patterns and basic defensive measures</li>
@@ -97,7 +97,7 @@
     </div>
     <div class="entry">
       <strong>Future Interns</strong> — Cybersecurity Intern
-      <div class="when">July – August</div>
+      <div class="when">July – August 2025</div>
       <ul>
         <li>Conducted SIEM (Splunk) hands-on practice for log ingestion and security event analysis</li>
         <li>Learned fundamentals of SOC workflows including alert triage and escalation</li>
@@ -106,7 +106,7 @@
    
      <div class="entry">
       <strong>Elevated Labs</strong> — Cybersecurity Intern
-      <div class="when">May – June</div>
+      <div class="when">May – June 2025</div>
       <ul>
         <li>Developed a Password Analyzer & Wordlist Generator project to support security testing</li>
         <li>Built practical understanding of security tools and their role in incident response</li>
@@ -126,6 +126,7 @@
       <span class="skill-badge">Threat Detection</span>
       <span class="skill-badge">Log Analysis</span>
       <span class="skill-badge">Alert Triage</span>
+    
     </div>
   </div>
 
@@ -136,8 +137,8 @@
       <span class="skill-badge">Wireshark</span>
       <span class="skill-badge"> Nmap</span>
       <span class="skill-badge">Burp suite</span>
-      <span class="skill-badge">Metasploitable</span>
-      <span class="skill-badge">MS Defender</span>
+      <span class="skill-badge">Metasploit</span>
+      <span class="skill-badge">Microsoft Defender</span>
       <span class="skill-badge">tcpdump</span>
       <span class="skill-badge">Kali Linux</span>
     </div>
@@ -258,24 +259,51 @@
   <div class="project-grid">
     
     <!-- Project 1 -->
-    <article class="card">
-      <img class="preview" src="images/password-analyzer.webp" alt="Password Analyzer">
+     <article class="card">
+      <img class="preview" src="images/Log-Analyzer.webp" alt="Log Analyzer">
       <div class="content">
-        <h3>Password Analyzer & Wordlist Generator</h3>
-        <p>Strength checker + smart wordlist generator for audits.</p>
+        <h3>Log File Analyzer</h3>
+        <p>Python tool to detect brute-force attacks in server logs by flagging suspicious IPs.</p>
+         <div class="tech-used">
+    <span>Python</span>
+    <span>Regex</span>
+    <span>Defaultdict</span>
+    <span>CLI</span>
+  </div>
+
+  <ul class="features">
+    <li>📑 Parses Apache-style logs for failed logins (HTTP 401)</li>
+    <li>🚩 Flags IPs with 3+ failed attempts</li>
+    <li>📂 Generates a `detected_ips.txt` report</li>
+    <li>👨‍💻 Ideal for SOC-style intrusion detection</li>
+  </ul>
       </div>
       <div class="actions">
-        <a class="btn-outline" href="https://github.com/Akarsh-gautam24/Password-Analyzer-Wordlist-Generator" target="_blank">GitHub</a>
-        <a class="btn" href="#" target="_blank">Live Demo</a>
+        <a class="btn-outline" href="https://github.com/Akarsh-gautam24/Log-File-Analyzer" target="_blank">GitHub</a>
+        <a class="btn" href="https://log-analyzer-web-ubslepkydzqxwa8vfjhanu.streamlit.app/" target="_blank">Live Demo</a>
       </div>
     </article>
+    
 
      <!-- Project 2 -->
     <article class="card">
       <img class="preview" src="images/Port-Scanner.jpeg" alt="Port Scanner">
       <div class="content">
         <h3>Port Scanner with Threat Intelligence</h3>
-        <p>Multi-IP scanning, GeoIP lookup, and risk rating system.</p>
+        <p>A Python CLI tool that scans IPs, shows risk levels via AbuseIPDB & GeoIP, and exports CSV reports.</p>
+        <div class="tech-used">
+    <span>Python</span>
+    <span>Streamlit</span>
+    <span>AbuseIPDB</span>
+    <span>GeoIP</span>
+  </div>
+
+  <ul class="features">
+    <li>🌐 Scan multiple IPs for open ports</li>
+    <li>🆘 Fetch threat scores with AbuseIPDB</li>
+    <li>📍 GeoIP-based location & usage detection</li>
+    <li>⚠️ Color-coded risk levels & CSV export</li>
+  </ul>
       </div>
       <div class="actions">
         <a class="btn-outline" href="https://github.com/Akarsh-gautam24/port-scanner-threat-intel" target="_blank">GitHub</a>
@@ -284,14 +312,26 @@
     </article>
 
     <article class="card">
-      <img class="preview" src="images/Log-Analyzer.webp" alt="Log Analyzer">
+      <img class="preview" src="images/password-analyzer.webp" alt="Password Analyzer">
       <div class="content">
-        <h3>Log File Analyzer</h3>
-        <p>Parses logs, flags anomalies, builds incident summary.</p>
+        <h3>Password Analyzer & Wordlist Generator</h3>
+        <p>A Python CLI tool for password strength analysis and custom wordlist generation.</p>
+        <div class="tech-used">
+      <span>Python</span>
+      <span>zxcvbn</span>
+      <span>CLI</span>
+      <span>Streamlit</span>
+      <ul class="features">
+      <li>🔒 Uses zxcvbn for realistic strength scoring</li>
+      <li>📝 Generates wordlists using personal inputs</li>
+      <li>🔄 Applies leetspeak & numeric patterns</li>
+      <li>📂 Outputs ready-to-use .txt wordlist</li>
+    </ul>
+    </div>
       </div>
       <div class="actions">
-        <a class="btn-outline" href="https://github.com/Akarsh-gautam24/Log-File-Analyzer" target="_blank">GitHub</a>
-        <a class="btn" href="https://log-analyzer-web-ubslepkydzqxwa8vfjhanu.streamlit.app/" target="_blank">Live Demo</a>
+        <a class="btn-outline" href="https://github.com/Akarsh-gautam24/Password-Analyzer-Wordlist-Generator" target="_blank">GitHub</a>
+        <a class="btn" href="#" target="_blank">Live Demo</a>
       </div>
     </article>
 
@@ -299,7 +339,19 @@
       <img class="preview" src="images/phishing-detection.jpg" alt="Phishing Detector">
       <div class="content">
         <h3>Phishing Link Detector</h3>
-        <p>Feature-based detection + real-time threat APIs.</p>
+        <p>A python CLI tool that detects phishing URLs using regex & ML through a Streamlit GUI—single/bulk checks with CSV export.</p>
+        <div class="tech-used">
+    <span>Python</span>
+    <span>Regex</span>
+    <span>Machine Learning</span>
+    <span>Streamlit</span>
+  </div>
+
+  <ul class="features">
+    <li>🔍 Detects URL anomalies (IP, missing HTTPS, suspicious tokens)</li>
+    <li>🖥️ Offers manual & bulk checking via GUI</li>
+    <li>📑 Shows verdicts and supports CSV downloads</li>
+  </ul>
       </div>
       <div class="actions">
         <a class="btn-outline" href="https://github.com/Akarsh-gautam24/phishing-link-detector" target="_blank">GitHub</a>
@@ -337,7 +389,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Akarsh Gautam | Portfolio Secure ✅</p>
+    <p>© 2025 Akarsh Gautam | Portfolio</p>
   </footer>
 </body>
 </html>
